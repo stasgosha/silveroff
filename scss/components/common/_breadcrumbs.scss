@@ -1,0 +1,46 @@
+.breadcrumbs-section{
+	padding: 25px 0;
+}
+
+.breadcrumbs{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	width: 100%;
+
+	li{
+		font-size: 12px;
+		line-height: 20px;
+		display: flex;
+		align-items: center;
+
+		&:after{
+			content: "\e941";
+			display: block;
+			margin: 0 13px;
+			font-family: 'icomoon';
+			font-size: 6px;
+			color: #999;
+		}
+
+		&:last-child{
+			margin-right: 0;
+
+			&:after{
+				display: none;
+			}
+
+			a{
+				color: $primary;
+			}
+		}
+
+		a{
+			color: #999;
+
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+}

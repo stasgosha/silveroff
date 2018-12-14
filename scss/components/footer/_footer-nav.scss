@@ -1,0 +1,51 @@
+.footer-nav{
+	display: flex;
+	justify-content: space-between;
+
+	ul{
+		list-style: none;
+		margin-right: 100px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		li{
+			margin-bottom: 20px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			a{
+				font-size: 14px;
+				line-height: 1.43;
+				color: #fff;
+				text-transform: uppercase;
+
+				&:hover{
+					color: $primary !important;
+				}
+			}
+
+			&.current-menu-item,
+			&.current-menu-parent{
+				a{
+					color: $primary !important;
+				}
+			}
+
+			&.current-menu-item{
+				a{
+					cursor: default;
+				}
+			}
+		}
+	}
+
+	&.gray{
+		ul li a{
+			color: #b7b7b7;
+		}
+	}
+}

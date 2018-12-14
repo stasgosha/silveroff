@@ -1,0 +1,13 @@
+.show-count-select{
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	line-height: 1.2;
+	color: #000;
+
+	.label{
+		font-weight: 400;
+		flex: none;
+		margin-right: 20px;
+	}
+}

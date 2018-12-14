@@ -1,0 +1,25 @@
+.selectable{
+	input{
+		display: none;
+
+		+ label{
+			padding: 0 2px;
+			border: 1px solid #aaa;
+			font-size: 12px;
+			line-height: 18px;
+			height: 20px;
+			color: #000;
+			cursor: pointer;
+			transition: all $t;
+			display: block;
+		}
+
+		&:checked{
+			+ label{
+				color: #fff;
+				background: #2e2e2e;
+				border-color: #2e2e2e;
+			}
+		}
+	}
+}

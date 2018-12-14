@@ -1,0 +1,50 @@
+.contacts-list{
+	color: #fff;
+
+	li{
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		.item-icon{
+			width: 30px;
+			flex: none;
+
+			i{
+				display: block;
+				font-size: 16px;
+
+				&.icon-mail{
+					font-size: 12px;
+				}
+
+				&.icon-store{
+					font-size: 14px;
+				}
+			}
+		}
+
+		.item-content{
+			flex: auto;
+
+			> a,
+			> p{
+				font-size: 16px;
+				line-height: 20px;
+				color: #fff;
+				font-weight: 400;
+				text-decoration: none;
+			}
+
+			> a{
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+	}
+}

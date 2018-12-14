@@ -1,0 +1,265 @@
+// .slf- - prefix for typography
+
+body{
+	font-size: 14px;
+	line-height: 1.714;
+	color: $text-color;
+	font-weight: 300;
+	font-family: $main-font;
+}
+
+.slf-typography p,
+body .slf-body-1,
+.slf-note{
+	font-size: 14px;
+	line-height: 1.714;
+	margin: 0 0 1.714em;
+	font-weight: 300;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	&.bigger{
+		font-size: 16px;
+	}
+
+	&.small{
+		font-size: 11px;
+	}
+
+	&.large{
+		font-size: 20px;
+	}
+
+	&.tiny{
+		font-size: 9px;
+	}
+}
+
+body .slf-body-2{
+	font-weight: bold;
+}
+
+time{
+	display: block;
+}
+
+body .slf-note{
+	font-size: 12px;
+	line-height: 1.667em;
+}
+
+.slf-typography h1,
+body .slf-h1{
+	font-size: 28px;
+	line-height: 1.178;
+	font-weight: 300;
+	margin: 0 0 28px;
+	color: #000;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	@media screen and (max-width: 767px){
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+}
+
+.slf-typography h2,
+body .slf-h2{
+	font-size: 22px;
+	line-height: 1.2;
+	margin: 0 0 1.2em;
+	font-weight: 500;
+	text-transform: uppercase;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.slf-typography h3,
+body .slf-h3{
+	font-size: 18px;
+	line-height: 1.178;
+	margin: 0 0 1.178em;
+	font-weight: 400;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+
+.slf-typography h4,
+.slf-typography h5,
+.slf-typography h6,
+body .slf-h4,
+body .slf-h5,
+body .slf-h6{
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0 0 1.5em;
+	font-weight: 400;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.section-caption{
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.sidebar-section-caption{
+	margin-bottom: 20px;
+	padding-bottom: 7px;
+	border-bottom: 2px solid #d6d6d6;
+}
+
+.page-text{
+	img{
+		display: block;
+		margin: 40px 0;
+		max-width: 100%;
+		height: auto;
+
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+
+	// .alignleft{
+	// 	float: left;
+	// 	margin-right: 40px;
+	// 	margin-bottom: 25px;
+	// }
+
+	// .alignright{
+	// 	float: right;
+	// 	margin-left: 40px;
+	// 	margin-bottom: 25px;
+	// }
+
+	// @media screen and (max-width: 991px){
+	// 	.md-fullwidth{
+	// 		display: block;
+	// 		margin: 0 auto 25px;
+	// 		float: none;
+	// 	}
+	// }
+}
+
+.slf-typography ul,
+body .slf-ul{
+	list-style: none;
+	margin: 30px 0;
+	font-weight: 400;
+
+	&:first-child{
+		margin-top: 0;
+	}
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	li{
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&:before{
+			content: '•  ';
+		}
+	}
+}
+
+.links-list{
+	list-style: none;
+
+	li{
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 14px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		a{
+			color: #000;
+
+			&:hover{
+				color: $primary;
+			}
+		}
+
+		&.current-menu-item{
+			a{
+				color: $primary;
+				font-weight: 400;
+				cursor: default;
+			}
+		}
+	}
+}
+
+.slf-typography .info,
+body .slf-info{
+	position: relative;
+	padding-left: 45px;
+	font-style: italic;
+	font-weight: 400;
+
+	&:before{
+		content: '\e93e';
+		font-family: 'icomoon';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 24px;
+		color: #959595;
+		font-style: normal;
+	}
+}
+
+.min-line-height{
+	line-height: calc(1em + 3px) !important;
+}
+
+.caption-with-line{
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 20px;
+
+	&:after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #aaaaaa;
+		z-index: -1;
+		position: absolute;
+		left: 0;
+		top: 50%;
+	}
+
+	.caption-text{
+		background: #fff;
+		padding-right: 20px;
+		margin-right: 30px;
+	}
+
+	.line-content{
+		padding: 0 20px;
+		background: #fff;
+	}
+}

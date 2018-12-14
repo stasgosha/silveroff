@@ -1,0 +1,13 @@
+.sidebar{
+	padding: 27px;
+	width: 100%;
+	background: $light-bg;
+
+	.sidebar-section{
+		margin-bottom: 35px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,146 @@
+.slick-slider{
+	.slide{
+		outline: none !important;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&.default-slide-paddings{
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		margin-right: -15px;
+
+		.slide{
+			padding: 0 15px;
+		}
+
+		// @media screen and (max-width: 830px){
+		// 	&.with-arrows{
+		// 		width: calc(100% - 60px);
+		// 		margin-left: auto;
+		// 		margin-right: auto;
+		// 	}
+		// }
+
+		// @media screen and (max-width: 575px){
+		// 	&.with-arrows{
+		// 		width: calc(100% - 90px);
+		// 		margin-left: auto;
+		// 		margin-right: auto;
+
+		// 		.brand-logo{
+		// 			max-width: 190px;
+		// 		}
+		// 	}
+		// }
+	}
+
+	&.slick-dotted{
+		margin-bottom: 60px;
+	}
+
+	&:hover{
+		.slick-arrow{
+			&.slick-prev{
+				left: 70px;
+			}
+
+			&.slick-next{
+				right: 70px;
+			}
+		}
+	}
+}
+
+.slick-arrow{
+	width: 64px;
+	height: 12px;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+	transition: all $t;
+
+	&:before{
+		content: '';
+		width: 64px;
+		height: 12px;
+		opacity: 1;
+		background: url(../img/icons/slider-arrows.png) no-repeat;
+	}
+
+	&.slick-prev{
+		left: -64px;
+
+		&:before{
+			background-position: 0 -12px;
+		}
+	}
+
+	&.slick-next{
+		right: -64px;
+
+		&:before{
+			background-position: 0 0;
+		}
+	}
+
+	&:hover{}
+}
+
+// .white-arrows{
+// 	.slick-arrow{
+// 		&:before{
+// 			background-image: url(../img/icons/slider-arrows-white.png);
+// 		}
+// 	}
+// }
+
+.slick-dots{
+	display: flex;
+	height: 10px;
+	align-items: center;
+	justify-content: center;
+	bottom: -33px;
+
+	li{
+		margin: 0 5px;
+		width: 10px;
+		height: 10px;
+
+		button{
+			width: 10px;
+			height: 10px;
+
+			&:before{
+				content: '';
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				opacity: 1;
+				background: #080808;
+				border: 0px solid $primary;
+				transition: all $t;
+				box-sizing: border-box;
+			}
+
+			&:hover{
+				&:before{
+					border-width: 5px;
+				}
+			}
+		}
+
+		&.slick-active{
+			button{
+				&:before{
+					border-width: 5px;
+				}
+			}
+		}
+	}
+}

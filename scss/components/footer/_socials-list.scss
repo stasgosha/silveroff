@@ -1,0 +1,28 @@
+.socials-list{
+	display: flex;
+	align-items: center;
+	list-style: none;
+
+	li{
+		margin-right: 44px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			color: #969696;
+			text-decoration: none;
+			display: block;
+
+			i{
+				display: block;
+				font-size: 18px;
+			}
+
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.price-block{
+	position: relative;
+
+	.price{
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 400;
+		color: $text-gray;
+	}
+
+	.old-price{
+		font-size: 14px;
+		line-height: 14px;
+		color: #ce3a3a;
+		font-weight: 300;
+		position: absolute;
+		white-space: nowrap;
+		left: 0;
+		bottom: -21px;
+		display: block;
+	}
+}

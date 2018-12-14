@@ -1,0 +1,46 @@
+.goods-slider{
+	.goods-slide{
+		padding: 0 2px;
+	}
+
+	.slick-list{
+		padding: 100px 0;
+		overflow-y: visible;
+		margin-top: -100px;
+		margin-bottom: -100px;
+	}
+
+	.slick-arrow{
+		width: 20px;
+		height: 63px;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		z-index: 10;
+		transition: all $t;
+		top: 280px;
+
+		&:before{
+			content: '\e951';
+			font-family: 'icomoon';
+			color: $gray;
+			font-size: 63px;
+			width: 20px;
+			height: 63px;
+			opacity: 1;
+			background: none;
+		}
+
+		&.slick-prev{
+			left: 0 !important;
+
+			&:before{
+				transform: rotate(180deg);
+			}
+		}
+
+		&.slick-next{
+			right: 0 !important;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.products-list{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: -70px;
+
+	> .item{
+		width: 25%;
+		margin-bottom: 70px;
+	}
+
+	@media screen and (max-width: 1399px){
+		> .item{
+			width: 33.33333%;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+$colors: (
+	white: #fff,
+	text: $text-color,
+	light: $text-light,
+	accent: $accent,
+	primary: $primary,
+);
+
+// blue: $blue,
+// orange: $orange,
+// dark: $text-dark
+
+@each $i in $colors{
+	$color-key: nth($i, 1);
+	$color-value: nth($i, 2);
+
+	&.color-#{$color-key}{
+		color: $color-value !important;
+	}
+}
+
+.push{
+	position: relative;
+}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-right{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.italy-underline{
+	display: inline-block;
+	position: relative;
+	border-bottom: 2px solid #fff;
+
+	&:before,
+	&:after{
+		content: '';
+		display: block;
+		width: 33.3333%;
+		height: 2px;
+		position: absolute;
+		bottom: -2px;
+		z-index: 2;
+	}
+
+	&:before{
+		left: 0;
+		background: #009246;
+	}
+
+	&:after{
+		right: 0;
+		background: #ce2b37;
+	}
+}

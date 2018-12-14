@@ -1,0 +1,37 @@
+.footer{
+	padding: 50px 0 50px;
+	color: #fff;
+	background: #2d2d2d;
+	position: relative;
+	z-index: 2;
+
+	.footer-top{}
+
+	.footer-bottom{
+		margin-top: 125px;
+	}
+
+	.footer-top-inner{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer-bottom-inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.copyright{
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	.footer-caption{
+		margin-bottom: 30px;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 300;
+		color: #fff;
+	}
+}

@@ -1,0 +1,27 @@
+// Fonts
+$main-font: 'Roboto', Arial, sans-serif;
+$second-font: 'Philosopher', $main-font;
+
+// Colors
+$beige: #ccac86;
+$green: #71ad26;
+$lightorange: #dd9965;
+
+$dark: #080808;
+$light: #b7b7b7;
+$gray: #2d2d2d;
+
+$light-bg: #f4f4f4;
+
+$text-color: $dark;
+$text-gray: $gray;
+$text-light: #b8b8b8;
+
+$primary: $beige;
+$accent: $beige;
+
+// Params
+$body-bg: #fff; // site background
+$t: .3s; // animation duration
+// $r: 5px; // default border radius
+$shadow: 0 0 16px rgba(#000, .16); // default card shadow

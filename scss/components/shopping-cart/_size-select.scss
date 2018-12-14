@@ -1,0 +1,26 @@
+.size-select{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+
+	.field{
+		width: 107px;
+		margin-bottom: 7px;
+	}
+
+	a{
+		font-size: 11px;
+		line-height: 14px;
+		color: #2e2e2e;
+		text-decoration: underline;
+		display: block;
+		width: 100%;
+		margin-bottom: -21px;
+
+		&:hover{
+			text-decoration: underline;
+			color: $primary;
+		}
+	}
+}

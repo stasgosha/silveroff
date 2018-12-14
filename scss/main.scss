@@ -1,0 +1,64 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/layout";
+@import "components/typography";
+@import "components/assist";
+@import "icons";
+
+// Header
+@import "components/header/header";
+@import "components/header/select-location-block";
+@import "components/header/logo-block";
+@import "components/header/top-nav";
+@import "components/header/user-info-widget";
+
+// Sections
+@import "components/sections/main-slider-section";
+@import "components/sections/filter-section";
+@import "components/sections/banners-section";
+@import "components/sections/recomendations-section";
+
+// Footer
+@import "components/footer/footer";
+@import "components/footer/socials-list";
+@import "components/footer/footer-nav";
+@import "components/footer/ya-market-block";
+@import "components/footer/contacts-list";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/panel";
+@import "components/common/contact-phone-block";
+@import "components/common/banner-block";
+@import "components/common/main-filter";
+@import "components/common/breadcrumbs";
+@import "components/common/sidebar";
+@import "components/common/accordion";
+@import "components/common/delivery-params";
+@import "components/common/delivery-price";
+@import "components/common/gutters";
+@import "components/common/selectable";
+
+// Shopping Cart
+@import "components/shopping-cart/shopping-cart";
+@import "components/shopping-cart/size-select";
+@import "components/shopping-cart/count-select";
+@import "components/shopping-cart/cart-total-block";
+@import "components/shopping-cart/promo-code-input";
+@import "components/shopping-cart/price-block";
+
+// Catalog
+@import "components/catalog/product-card";
+@import "components/catalog/products-list";
+@import "components/catalog/tags-line";
+@import "components/catalog/filters-line";
+@import "components/catalog/applied-filter-block";
+@import "components/catalog/sort-by-block";
+@import "components/catalog/show-count-select";
+@import "components/catalog/catalog-category-banner";
+
+// Sliders
+@import "components/sliders/slick-slider";
+@import "components/sliders/goods-slider";
+@import "components/sliders/product-photos-slider";

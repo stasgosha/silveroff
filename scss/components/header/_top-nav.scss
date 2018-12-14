@@ -1,0 +1,46 @@
+.top-nav{
+	display: flex;
+	align-items: center;
+	list-style: none;
+
+	li{
+		margin-right: 50px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			display: block;
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height: 1.85;
+			color: #000;
+			text-decoration: none;
+			font-weight: 400;
+
+			&:hover{
+				color: $primary;
+			}
+		}
+
+		&.current-menu-item,
+		&.current-menu-parent{
+			a{
+				color: $primary;
+			}
+		}
+
+		&.current-menu-item{
+			a{
+				cursor: default;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1399px){
+		li{
+			margin-right: 30px;
+		}
+	}
+}

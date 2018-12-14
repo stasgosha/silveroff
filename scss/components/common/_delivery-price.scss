@@ -1,0 +1,19 @@
+.delivery-price{
+	display: flex;
+	align-items: center;
+	padding: 15px 20px;
+	background: #fff3e4;
+	color: $text-gray;
+
+	.label{
+		text-align: right;
+		font: 15px;
+		line-height: 18px;
+	}
+
+	.price{
+		margin-left: 25px;
+		font-size: 34px;
+		line-height: 24px;
+	}
+}

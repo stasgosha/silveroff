@@ -1,0 +1,55 @@
+.cart-total-block{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	.subtotal{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-bottom: 15px;
+
+		> .item{
+			display: flex;
+			font-size: 18px;
+			line-height: 30px;
+			color: #969696;
+
+			.label{
+			}
+
+			.value{
+				min-width: 80px;
+				flex: none;
+				font-weight: 400;
+				text-align: right;
+
+				&.accented{
+					color: #545f70;
+				}
+			}
+		}
+	}
+
+	.total{
+		display: flex;
+		align-items: center;
+		font-size: 25px;
+		line-height: 25px;
+		color: $text-gray;
+		margin-bottom: 15px;
+
+		.total-item{
+			margin-right: 30px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			&.count,
+			&.total-price{
+				font-weight: 400;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.count-select{
+	display: flex;
+	align-items: center;
+
+	.control{
+		width: 22px;
+		height: 22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #e8e8e8;
+		transition: all $t;
+		flex: none;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&:hover{
+			background: $primary;
+		}
+
+		i{
+			display: block;
+			font-size: 10px;
+		}
+	}
+
+	.field{
+		width: 38px;
+		flex: none;
+		outline: none !important;
+		border: 0;
+		background: transparent;
+		text-align: center;
+		font-size: 18px;
+		font-weight: 400;
+		color: $text-gray;
+	}
+
+}

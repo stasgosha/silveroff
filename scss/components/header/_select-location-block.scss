@@ -1,0 +1,45 @@
+.select-location-block{
+	display: flex;
+	align-items: center;
+
+	.block-icon{
+		margin-right: 13px;
+
+		i{
+			display: block;
+			font-size: 18px;
+			color: $light;
+		}
+	}
+
+	.block-content{
+		color: $text-gray;
+		line-height: 1.5;
+		font-weight: 300;
+
+		a{
+			color: $text-gray;
+			text-decoration: underline;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.city-select{
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+
+	span{
+		font-weight: 400;
+		margin-right: 7px;
+	}
+
+	i{
+		display: block;
+		font-size: 7px;
+	}
+}

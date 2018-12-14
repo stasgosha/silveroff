@@ -1,0 +1,48 @@
+.contact-phone-block{
+	color: #262626;
+
+	.cpb-phone{
+		display: flex;
+		align-items: center;
+		margin-bottom: 2px;
+
+		> a{
+			font-size: 22px;
+			line-height: 24px;
+			color: #262626;
+			font-weight: 400;
+			text-decoration: none;
+			letter-spacing: 0.03em;
+
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+
+	i{
+		display: block;
+		font-size: 7px;
+		margin-left: 10px;
+	}
+
+	p{
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 300;
+	}
+
+	&.white{
+		color: #fff;
+
+		.cpb-phone{
+			> a{
+				color: #fff;
+
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+	}
+}
