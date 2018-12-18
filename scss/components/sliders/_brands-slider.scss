@@ -1,0 +1,48 @@
+.brands-slider{
+	.slide{
+		height: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.slick-arrow{
+		width: 12px;
+		height: 23px;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		z-index: 10;
+		transition: all $t;
+
+		&:before{
+			content: '\e941';
+			font-family: 'icomoon';
+			color: $gray;
+			font-size: 23px;
+			width: 12px;
+			height: 23px;
+			opacity: 1;
+			background: none;
+			transition: all $t;
+		}
+
+		&:hover{
+			&:before{
+				color: $primary;
+			}
+		}
+
+		&.slick-prev{
+			left: 0 !important;
+
+			&:before{
+				transform: rotate(180deg);
+			}
+		}
+
+		&.slick-next{
+			right: 0 !important;
+		}
+	}
+}

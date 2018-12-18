@@ -1,0 +1,43 @@
+.pagination{
+	list-style: none;
+	display: flex;
+	align-items: center;
+
+	li{
+		margin-right: 20px;
+		min-width: 40px;
+		font-size: 22px;
+		line-height: 40px;
+		color: #000;
+		text-align: center;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			display: block;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #000;
+
+			&:hover{
+				background: #2e2e2e;
+				color: #fff;
+			}
+		}
+
+		&.current{
+			a{
+				background: #2e2e2e;
+				color: #fff;
+				font-weight: 400;
+				cursor: default;
+			}
+		}
+	}
+}

@@ -24,6 +24,14 @@ $(document).ready(function(){
 		arrows: true
 	});
 
+	$('.brands-slider').slick({
+		infinite: true,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true
+	});
+
 	$('.product-photos-slider').slick({
 		infinite: true,
 		slidesToShow: 1,
@@ -61,6 +69,44 @@ $(document).ready(function(){
 	});
 
 	jcf.replace( $('.select-field select') );
+
+	// Range
+	jcf.setOptions('Range input', {
+		range: 'all'
+	});
+
+	jcf.replace( $('.range-input input[type="range"]') );
+
+
+	// Range Input
+	$('.range-input input[type="range"]').on('change', function(){
+		$(this).closest('.range-input').find('.range-from').val( $(this)[0].valueLow );
+		$(this).closest('.range-input').find('.range-to').val( $(this)[0].valueHigh );
+	});
+
+	$('.range-input .range-from').on('change', function(){
+		var value = $(this).val() * 1;
+		var dest = $(this).closest('.range-input').find('input[type="range"]');
+		var min = dest.prop('min') * 1;
+		var max = dest[0].valueHigh;
+
+		if (value < min) { value = min }
+		if (value > max) { value = max - 1 }
+
+		dest.val(value + ',' + max);
+	});
+
+	$('.range-input .range-to').on('change', function(){
+		var value = $(this).val() * 1;
+		var dest = $(this).closest('.range-input').find('input[type="range"]');
+		var max = dest.prop('max') * 1;
+		var min = dest[0].valueLow;
+
+		if (value < min) { value = min + 1 }
+		if (value > max) { value = max }
+
+		dest.val(min + ',' + value);
+	});
 
 	// Count Select
 	$('.count-select .control').click(function(){
@@ -179,6 +225,23 @@ $(document).ready(function(){
 	$('.promo-code-input p').click(function(){
 		$(this).parent().addClass('active');
 		$(this).siblings('input').focus();
+	});
+
+	// Input fields, Textareas
+	$('.input-field, .textarea').on('keyup', function(){
+		if( $(this).val() !== '' ){
+			$(this).addClass('not-empty');
+		} else{
+			$(this).removeClass('not-empty');
+		}
+	});
+
+	$('.input-field, .textarea').each(function(){
+		if( $(this).val() !== '' ){
+			$(this).addClass('not-empty');
+		} else{
+			$(this).removeClass('not-empty');
+		}
 	});
 
 	// WOW animations

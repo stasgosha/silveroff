@@ -81,8 +81,145 @@
 		<div class="container">
 			<div class="inner-page-wrapper">
 				<aside class="page-sidebar">
-					<div class="sidebar">
-						<div class="sidebar-section"></div>
+					<div class="sidebar small-paddings">
+						<div class="sidebar-section">
+							<div class="catalog-filter open-on-load" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Стоимость</div>
+								<div class="filter-content" data-type="accordion-content">
+									<div class="range-input">
+										<input value="2000,9000" step="50" min="0" max="15000" type="range" multiple>
+										<div class="range-fields">
+											<div class="item label">от</div>
+											<div class="item field">
+												<input disabled type="text" value="2000" class="range-from">
+											</div>
+											<div class="item label">до</div>
+											<div class="item field">
+												<input disabled type="text" value="9000" class="range-to">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-filter open-on-load" data-type="accordion">
+								<div class="search-results-count">13 <span>изделий</span></div>
+								<div class="filter-header" data-type="accordion-header">Бренд</div>
+								<div class="filter-content" data-type="accordion-content">
+									<div class="filters-list mCustomScrollbar" data-mcs-axis="y" data-mcs-theme="minimal-dark">
+										<div class="filters-list-inner">
+											<div class="checkbox">
+												<input type="checkbox" id="VoroninGold">
+												<label for="VoroninGold">Voronin Gold</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" id="AtisICo" checked>
+												<label for="AtisICo">Атис и Ко</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" id="golden">
+												<label for="golden">Золотые купола</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" id="lazurit">
+												<label for="lazurit">Лазурит</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" id="liberty">
+												<label for="liberty">Либерти</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" id="master-clio">
+												<label for="master-clio">Мастер Клио</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" id="mercury-msk">
+												<label for="mercury-msk">Меркурий МСК</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" id="liberty-1">
+												<label for="liberty-1">Либерти</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" id="master-clio-1">
+												<label for="master-clio-1">Мастер Клио</label>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" id="mercury-msk-1">
+												<label for="mercury-msk-1">Меркурий МСК</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Страна</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Для кого</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Плетение</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Стиль</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Категория</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Коллекция</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Металл</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Цвет</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Проба</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Покрытие</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Тип материала</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Вставка</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Цвет вставки</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Тип замка</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Минимальный вес</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Ширина</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+							<div class="catalog-filter" data-type="accordion">
+								<div class="filter-header" data-type="accordion-header">Размеры</div>
+								<div class="filter-content" data-type="accordion-content"></div>
+							</div>
+						</div>
 					</div>
 				</aside>
 				<section class="page-content">
@@ -741,8 +878,86 @@
 							</div>
 						</div>
 					</div>
+					<div class="catalog-footer">
+						<div class="item">
+							<a href="#" class="btn btn-light">
+								<i class="icon-plus"></i>
+								<span>Показать еще</span>
+							</a>
+						</div>
+						<div class="item">
+							<ul class="pagination">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li>...</li>
+								<li><a href="#">9</a></li>
+							</ul>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
+		<section class="brands-section">
+			<div class="container">
+				<div class="section-caption">
+					<h2 class="slf-h2">Наши бренды</h2>
+				</div>
+				<div class="brands-slider slider-default-paddings">
+					<div class="slide">
+						<img src="img/partners/estet.png" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/partners/silver-wings.png" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/partners/estet.png" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/partners/silver-wings.png" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/partners/estet.png" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/partners/silver-wings.png" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/partners/estet.png" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/partners/silver-wings.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="advantages-section section-default-paddings">
+			<div class="container">
+				<div class="section-caption">
+					<h2 class="slf-h2">Преимущества серебряных цепочек</h2>
+				</div>
+				<div class="slf-typography text-center">
+					<p>Браслет – изумительное и великолепное украшение для рук. Возможно, в силу климата, в котором мы живем, браслеты незаслуженно забываются на долгую пору зимы и осени. В это время года серебряные или стеклянные браслеты, как один из основных видов украшений в бижутерии, носят только особенные ценительницы. Наверное, здесь также присутствует фактор удобства и уместности такого украшения в офисе.</p>
+					<p>Янтарный браслет на резинке чешское стеклоНо, например, правильно подобранный крупный браслет, одетый поверх рукава водолазки или блузки, не только не будет вам мешать, но и очень эффектно дополнит ваш наряд.</p>
+				</div>
+			</div>
+		</section>
+		<section class="similar-categories-section">
+			<div class="container">
+				<div class="section-caption">
+					<h2 class="slf-h2">Похожие категории</h2>
+				</div>
+				<ul class="similar-categories-list">
+					<li><a href="#">Серебряные цепочки</a></li>
+					<li><a href="#">Серебряные подвески и кулоны</a></li>
+					<li><a href="#">Серебряные кольца</a></li>
+					<li><a href="#">Серебряные аксессуары</a></li>
+					<li><a href="#">Серебряные кольца</a></li>
+				</ul>
+			</div>
+		</section>
 	</div>
 <?php include('footer.php'); ?>

@@ -53,6 +53,16 @@
 		font-size: 12px;
 	}
 
+	&.btn-light{
+		background: #e6e6e6;
+		text-transform: none;
+		color: $text-gray;
+
+		&:not([disabled]):hover{
+			background: darken(#e6e6e6, 10%);
+		}
+	}
+
 	&.btn-lightgray{
 		background: #797979;
 

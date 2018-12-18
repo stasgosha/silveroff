@@ -39,6 +39,10 @@
 @import "components/common/delivery-price";
 @import "components/common/gutters";
 @import "components/common/selectable";
+@import "components/common/pagination";
+@import "components/common/similar-categories-list";
+@import "components/common/range-input";
+@import "components/common/checkbox";
 
 // Shopping Cart
 @import "components/shopping-cart/shopping-cart";
@@ -47,6 +51,7 @@
 @import "components/shopping-cart/cart-total-block";
 @import "components/shopping-cart/promo-code-input";
 @import "components/shopping-cart/price-block";
+@import "components/shopping-cart/checkout";
 
 // Catalog
 @import "components/catalog/product-card";
@@ -57,8 +62,12 @@
 @import "components/catalog/sort-by-block";
 @import "components/catalog/show-count-select";
 @import "components/catalog/catalog-category-banner";
+@import "components/catalog/catalog-footer";
+@import "components/catalog/catalog-filter";
+@import "components/catalog/filters-list";
 
 // Sliders
 @import "components/sliders/slick-slider";
 @import "components/sliders/goods-slider";
 @import "components/sliders/product-photos-slider";
+@import "components/sliders/brands-slider";

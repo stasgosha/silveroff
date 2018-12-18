@@ -1,7 +1,7 @@
 .products-list{
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: -70px;
+	margin-bottom: calc(50px - 70px);
 
 	> .item{
 		width: 25%;
