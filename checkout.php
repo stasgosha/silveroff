@@ -249,6 +249,7 @@
 								</div>
 								<div class="delivery-city">
 									<h3 class="slf-h3 font-300 margin-bottom-big">Город доставки</h3>
+									
 								</div>
 								<div class="delivery-method"></div>
 								<div class="payment-method"></div>
