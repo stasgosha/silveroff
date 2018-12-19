@@ -43,6 +43,10 @@
 @import "components/common/similar-categories-list";
 @import "components/common/range-input";
 @import "components/common/checkbox";
+@import "components/common/radio-tabs";
+@import "components/common/find-on-map";
+@import "components/common/map-container";
+@import "components/common/pickup-point-block";
 
 // Shopping Cart
 @import "components/shopping-cart/shopping-cart";
@@ -52,6 +56,8 @@
 @import "components/shopping-cart/promo-code-input";
 @import "components/shopping-cart/price-block";
 @import "components/shopping-cart/checkout";
+@import "components/shopping-cart/delivery-services";
+@import "components/shopping-cart/payment-methods";
 
 // Catalog
 @import "components/catalog/product-card";

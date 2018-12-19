@@ -227,6 +227,16 @@ $(document).ready(function(){
 		$(this).siblings('input').focus();
 	});
 
+	// Tabs
+	$("[data-tab]").click(function(e){
+		// e.preventDefault();
+		var dest = $( $(this).data('tab') );
+		dest.stop().fadeIn(300).siblings().hide(0);
+		$(this).addClass('current').siblings().removeClass('current');
+	});
+
+	$("[data-tab].current").click();
+
 	// Input fields, Textareas
 	$('.input-field, .textarea').on('keyup', function(){
 		if( $(this).val() !== '' ){

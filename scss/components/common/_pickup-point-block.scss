@@ -1,0 +1,64 @@
+.pickup-point-block{
+	input{
+		display: none;
+
+		+ label{
+			display: flex;
+			padding: 25px 30px 20px 25px;
+			align-items: flex-start;
+			cursor: pointer;
+			transition: all $t;
+			position: relative;
+			z-index: 2;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 18px;
+				height: 18px;
+				box-sizing: border-box;
+				flex: none;
+				margin-right: 25px;
+				border: 1px solid #d3d3d3;
+				transition: all $t;
+				border-radius: 50%;
+			}
+
+			&:after{
+				content: '';
+				display: block;
+				box-sizing: border-box;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				position: absolute;
+				left: 0;
+				top: 0;
+				transition: all $t;
+				border: 1px solid #d3d3d3;
+			}
+		}
+
+		&:checked{
+			+ label{
+				&:before{
+					border: 9px solid #000;
+				}
+
+				&:after{
+					border: 3px solid #000;
+				}
+			}
+		}
+	}
+}
+
+.pickup-points-list{
+	> .item{
+		margin-bottom: 10px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}

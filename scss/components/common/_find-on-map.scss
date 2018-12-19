@@ -1,0 +1,27 @@
+.find-on-map{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	color: #000;
+	margin-bottom: 20px;
+	justify-content: center;
+	transition: all $t;
+
+	&:hover{
+		color: $primary;
+	}
+
+	i{
+		display: block;
+		margin-right: 10px;
+		flex: none;
+		font-size: 18px;
+	}
+
+	span{
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		border-bottom: 1px dotted #000;
+	}
+}
