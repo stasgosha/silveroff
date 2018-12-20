@@ -224,252 +224,331 @@
 						<p class="slf-body-1">* Поля помеченные звездочкой обязательны для заполнения, остальные данные Вы всегда сможете согласовать с нашим менеджером по телефону при подтверждении заказа.</p>
 						<form action="#" class="checkout-form form">
 							<div class="checkout-form-content">
-								<div class="user-info">
-									<h3 class="slf-h3 font-300 margin-bottom-big">Ваши данные</h3>
-									<div class="equal-width-columns">
-										<div class="column">
-											<div class="form-field">
-												<input id="user-name" type="text" required class="input-field">
-												<label for="user-name">ФИО*</label>
+								<div class="checkout-form-content-inner">
+									<div class="user-info">
+										<h3 class="slf-h3 font-300 margin-bottom-big">Ваши данные</h3>
+										<div class="equal-width-columns">
+											<div class="column">
+												<div class="form-field">
+													<input id="user-name" type="text" required class="input-field">
+													<label for="user-name">ФИО*</label>
+												</div>
 											</div>
-										</div>
-										<div class="column">
-											<div class="form-field">
-												<input id="user-phone" type="phone" required class="input-field">
-												<label for="user-phone">Телефон*</label>
+											<div class="column">
+												<div class="form-field">
+													<input id="user-phone" type="phone" required class="input-field">
+													<label for="user-phone">Телефон*</label>
+												</div>
 											</div>
-										</div>
-										<div class="column">
-											<div class="form-field">
-												<input id="user-email" type="email" required class="input-field">
-												<label for="user-email">Ваш e-mail*</label>
+											<div class="column">
+												<div class="form-field">
+													<input id="user-email" type="email" required class="input-field">
+													<label for="user-email">Ваш e-mail*</label>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="delivery-city">
-									<h3 class="slf-h3 font-300 margin-bottom-big">Город доставки</h3>
-									<div class="delivery-city-select">
-										<div class="label">Варианты доставки:</div>
-										<div class="field">
-											<div class="select-field inline">
-												<select>
-													<option value="1">Санкт-Петербург</option>
-												</select>
+									<div class="delivery-city">
+										<h3 class="slf-h3 font-300 margin-bottom-big">Город доставки</h3>
+										<div class="delivery-city-select">
+											<div class="label">Варианты доставки:</div>
+											<div class="field">
+												<div class="select-field inline">
+													<select>
+														<option value="1">Санкт-Петербург</option>
+													</select>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="delivery-method">
-									<h3 class="slf-h3 font-300 margin-bottom-normal">Способ получения заказа</h3>
-									<div class="radio-tabs">
-										<div class="item" data-tab="#courier-tab">
-											<input type="radio" name="delivery_method" value="courier" id="courier">
-											<label for="courier">
-												<div class="item-icon">
-													<i class="icon-man-with-box"></i>
-												</div>
-												<div class="item-caption">Курьером</div>
-												<p class="slf-note">Доставка до вашей двери</p>
-											</label>
-										</div>
-										<div class="item current" data-tab="#customer-pickup-tab">
-											<input type="radio" name="delivery_method" value="customer-pickup" id="customer-pickup" checked>
-											<label for="customer-pickup">
-												<div class="item-icon">
-													<i class="icon-save-location"></i>
-												</div>
-												<div class="item-caption">Самовывоз</div>
-												<p class="slf-note">251 пункт выдачи заказов</p>
-											</label>
-										</div>
-										<div class="item" data-tab="#post-office-tab">
-											<input type="radio" name="delivery_method" value="post-office" id="post-office">
-											<label for="post-office">
-												<div class="item-icon">
-													<i class="icon-post-box"></i>
-												</div>
-												<div class="item-caption">Почтой</div>
-												<p class="slf-note">В вашем почтовом отделении</p>
-											</label>
-										</div>
-									</div>
-									<div class="shipping-tabs-container">
-										<div class="shipping-tab" id="courier-tab">
-											<h3 class="slf-h3 font-300 margin-bottom-normal">Курьерская служба</h3>
-											<div class="delivery-services-list">
-												<div class="item">
-													<div class="delivery-service-radio-block">
-														<input type="radio" name="delivery_service" id="dpd">
-														<label for="dpd">
-															<div class="item-logo">
-																<img src="img/logos/dpd.png" alt="">
-															</div>
-															<div class="item-caption">Курьерской службой DPD</div>
-															<ul class="item-params">
-																<li>от 250руб.</li>
-																<li>до 2 дней</li>
-															</ul>
-														</label>
+									<div class="delivery-method">
+										<h3 class="slf-h3 font-300 margin-bottom-normal">Способ получения заказа</h3>
+										<div class="radio-tabs">
+											<div class="item current" data-tab="#courier-tab">
+												<input type="radio" name="delivery_method" value="courier" id="courier" checked>
+												<label for="courier">
+													<div class="item-icon">
+														<i class="icon-man-with-box"></i>
 													</div>
-												</div>
-												<div class="item">
-													<div class="delivery-service-radio-block">
-														<input type="radio" name="delivery_service" id="sdek">
-														<label for="sdek">
-															<div class="item-logo">
-																<img src="img/logos/sdek.png" alt="">
-															</div>
-															<div class="item-caption">Курьерской службой СДЭК</div>
-															<ul class="item-params">
-																<li>
-																	<div class="km-from-mkad">
-																		<span>КМ от МКАД</span>
-																		<div class="count-select black">
-																			<div class="control" data-action="subtraction">
-																				<i class="icon-minus"></i>
-																			</div>
-																			<input type="text" data-min="1" data-max="100" value="1" class="field selectedCount" readonly>
-																			<div class="control" data-action="addition">
-																				<i class="icon-plus"></i>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-																<li>от 350руб.</li>
-																<li>до 4 дней</li>
-															</ul>
-														</label>
-													</div>
-												</div>
+													<div class="item-caption">Курьером</div>
+													<p class="slf-note">Доставка до вашей двери</p>
+												</label>
 											</div>
-											<h3 class="slf-h3 font-300 margin-bottom-medium">Куда нужно доставить</h3>
-											<div class="shipping-address-form">
-												<div class="form-row">
-													<div class="form-field wide">
-														<input id="shipping-street" type="text" required class="input-field">
-														<label for="shipping-street">Улица</label>
+											<div class="item" data-tab="#customer-pickup-tab">
+												<input type="radio" name="delivery_method" value="customer-pickup" id="customer-pickup">
+												<label for="customer-pickup">
+													<div class="item-icon">
+														<i class="icon-save-location"></i>
 													</div>
-													<div class="form-field">
-														<input id="shipping-building" type="text" required class="input-field">
-														<label for="shipping-building">Дом, корпус, строение</label>
-														<div class="field-error">
-															<label for="shipping-building">Для расчета стоимости доставки, требуется указать ваш индекс</label>
+													<div class="item-caption">Самовывоз</div>
+													<p class="slf-note">251 пункт выдачи заказов</p>
+												</label>
+											</div>
+											<div class="item" data-tab="#post-office-tab">
+												<input type="radio" name="delivery_method" value="post-office" id="post-office">
+												<label for="post-office">
+													<div class="item-icon">
+														<i class="icon-post-box"></i>
+													</div>
+													<div class="item-caption">Почтой</div>
+													<p class="slf-note">В вашем почтовом отделении</p>
+												</label>
+											</div>
+										</div>
+										<div class="shipping-tabs-container">
+											<div class="shipping-tab" id="courier-tab">
+												<h3 class="slf-h3 font-300 margin-bottom-normal">Курьерская служба</h3>
+												<div class="delivery-services-list">
+													<div class="item">
+														<div class="delivery-service-radio-block">
+															<input type="radio" name="delivery_service" id="dpd">
+															<label for="dpd">
+																<div class="item-logo">
+																	<img src="img/logos/dpd.png" alt="">
+																</div>
+																<div class="item-caption">Курьерской службой DPD</div>
+																<ul class="item-params">
+																	<li>от 250руб.</li>
+																	<li>до 2 дней</li>
+																</ul>
+															</label>
 														</div>
 													</div>
-													<div class="form-field">
-														<input id="shipping-apartments" type="text" class="input-field">
-														<label for="shipping-apartments">Квартира, офис</label>
+													<div class="item">
+														<div class="delivery-service-radio-block">
+															<input type="radio" name="delivery_service" id="sdek">
+															<label for="sdek">
+																<div class="item-logo">
+																	<img src="img/logos/sdek.png" alt="">
+																</div>
+																<div class="item-caption">Курьерской службой СДЭК</div>
+																<ul class="item-params">
+																	<li>
+																		<div class="km-from-mkad">
+																			<span>КМ от МКАД</span>
+																			<div class="count-select black">
+																				<div class="control" data-action="subtraction">
+																					<i class="icon-minus"></i>
+																				</div>
+																				<input type="text" data-min="1" data-max="100" value="1" class="field selectedCount" readonly>
+																				<div class="control" data-action="addition">
+																					<i class="icon-plus"></i>
+																				</div>
+																			</div>
+																		</div>
+																	</li>
+																	<li>от 350руб.</li>
+																	<li>до 4 дней</li>
+																</ul>
+															</label>
+														</div>
 													</div>
 												</div>
-												<div class="form-row">
-													<div class="expand-trigger">
-														<i class="icon-plus"></i>
-														<span>Указать подъезд, домофон, этаж и комментарий курьеру</span>
-													</div>
-												</div>
-											</div>
-											<h3 class="slf-h3 font-300 margin-bottom-medium">Дата доставки</h3>
-											<div class="select-shipping-date">
-												<div class="shipping-date">Завтра, 10 августа, с 10:00 до 18:00</div>
-												<div class="shipping-price">250 руб.</div>
-											</div>
-										</div>
-										<div class="shipping-tab" id="customer-pickup-tab">
-											<div class="find-on-map">
-												<i class="icon-location"></i>
-												<span>Найти пункт на карте</span>
-											</div>
-											<div class="map-container margin-bottom-large">
-												<img src="img/temp/map.png" alt="">
-											</div>
-											<h3 class="slf-h3 font-300 margin-bottom-small">Пункты самовывоза</h3>
-											<div class="pickup-points-list">
-												<div class="item">
-													<div class="pickup-point-block">
-														<input type="radio" name="pickup-points" id="pp_silveroff">
-														<label for="pp_silveroff">
-															<div class="item-logo"></div>
-															<div class="item-content">
-																<div class="item-caption">Самовывоз ВДНХ</div>
-																<p class="slf-body-1">Шоурум - Москва 
-																	<br>Адрес: м. ВДНХ ул. Касаткина д. 3Ф стр.7 
-																	<br>Режим работы магазина: ПН-ПТ: 10 до 19 часов, Сб-Вск: 12 до 17 часов 
-																	<br>Срок хранения заказа на пункте выдачи: 7 дней - до 16.10.2018
-																</p>
+												<h3 class="slf-h3 font-300 margin-bottom-medium">Куда нужно доставить</h3>
+												<div class="shipping-address-form">
+													<div class="form-row">
+														<div class="form-field wide">
+															<input id="shipping-street" type="text" required class="input-field">
+															<label for="shipping-street">Улица</label>
+														</div>
+														<div class="form-field">
+															<input id="shipping-building" type="text" required class="input-field">
+															<label for="shipping-building">Дом, корпус, строение</label>
+															<div class="field-error">
+																<label for="shipping-building">Для расчета стоимости доставки, требуется указать ваш индекс</label>
 															</div>
-															<div class="item-price">0руб.</div>
-														</label>
+														</div>
+														<div class="form-field">
+															<input id="shipping-apartments" type="text" class="input-field">
+															<label for="shipping-apartments">Квартира, офис</label>
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="expand-trigger">
+															<i class="icon-plus"></i>
+															<span>Указать подъезд, домофон, этаж и комментарий курьеру</span>
+														</div>
+													</div>
+												</div>
+												<h3 class="slf-h3 font-300 margin-bottom-medium">Дата доставки</h3>
+												<div class="select-shipping-date">
+													<div class="shipping-date">Завтра, 10 августа, с 10:00 до 18:00</div>
+													<div class="shipping-price">250 руб.</div>
+												</div>
+											</div>
+											<div class="shipping-tab" id="customer-pickup-tab">
+												<div class="find-on-map">
+													<i class="icon-location"></i>
+													<span>Найти пункт на карте</span>
+												</div>
+												<div class="map-container margin-bottom-large">
+													<img src="img/temp/map.png" alt="">
+												</div>
+												<h3 class="slf-h3 font-300 margin-bottom-small">Пункты самовывоза</h3>
+												<div class="pickup-points-list mCustomScrollbar" data-mcs-theme="dark">
+													<div class="pickup-points-list-inner">
+														<div class="item">
+															<div class="pickup-point-block">
+																<input type="radio" name="pickup-points" id="pp_silveroff">
+																<label for="pp_silveroff">
+																	<div class="item-logo">
+																		<img src="img/logos/silveroff.png" alt="">
+																	</div>
+																	<div class="item-content">
+																		<div class="item-caption">Самовывоз ВДНХ</div>
+																		<p class="slf-body-1">Шоурум - Москва 
+																			<br>Адрес: м. ВДНХ ул. Касаткина д. 3Ф стр.7 
+																			<br>Режим работы магазина: ПН-ПТ: 10 до 19 часов, Сб-Вск: 12 до 17 часов 
+																			<br>Срок хранения заказа на пункте выдачи: 7 дней - до 16.10.2018
+																		</p>
+																	</div>
+																	<div class="item-price">0руб.</div>
+																</label>
+															</div>
+														</div>
+														<div class="item">
+															<div class="pickup-point-block">
+																<input type="radio" name="pickup-points" id="pp_boxberry_1">
+																<label for="pp_boxberry_1">
+																	<div class="item-logo">
+																		<img src="img/logos/boxberry.png" alt="">
+																	</div>
+																	<div class="item-content">
+																		<div class="item-caption">Самовывоз - Путилково д, Новотушинская ул, д. 4</div>
+																		<p class="slf-body-1">Шоурум - Москва 
+																			<br>Адрес: м. ВДНХ ул. Касаткина д. 3Ф стр.7 
+																			<br>Режим работы магазина: ПН-ПТ: 10 до 19 часов, Сб-Вск: 12 до 17 часов 
+																			<br>Срок хранения заказа на пункте выдачи: 7 дней - до 16.10.2018
+																		</p>
+																	</div>
+																	<div class="item-price">549руб.</div>
+																</label>
+															</div>
+														</div>
+														<div class="item">
+															<div class="pickup-point-block">
+																<input type="radio" name="pickup-points" id="pp_boxberry">
+																<label for="pp_boxberry">
+																	<div class="item-logo">
+																		<img src="img/logos/boxberry.png" alt="">
+																	</div>
+																	<div class="item-content">
+																		<div class="item-caption">Самовывоз - Путилково д, Новотушинская ул, д. 4</div>
+																		<p class="slf-body-1">Шоурум - Москва 
+																			<br>Адрес: м. ВДНХ ул. Касаткина д. 3Ф стр.7 
+																			<br>Режим работы магазина: ПН-ПТ: 10 до 19 часов, Сб-Вск: 12 до 17 часов 
+																			<br>Срок хранения заказа на пункте выдачи: 7 дней - до 16.10.2018
+																		</p>
+																	</div>
+																	<div class="item-price">549руб.</div>
+																</label>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
+											<div class="shipping-tab" id="post-office-tab">
+												Нет дизайна
+											</div>
 										</div>
-										<div class="shipping-tab" id="post-office-tab">3</div>
+									</div>
+									<div class="payment-methods">
+										<h3 class="slf-h3 font-300 margin-bottom-large">Способы оплаты</h3>
+										<div class="payment-methods-list">
+											<div class="item">
+												<input type="radio" name="payment-method" id="pm-cash" checked>
+												<label for="pm-cash">
+													<div class="item-logo">
+														<img src="img/logos/cash.png" alt="">
+													</div>
+													<div class="item-content">
+														<p class="item-caption">Наличными</p>
+														<p>Наличными средствами при курьерской доставке или самовывозе.</p>
+													</div>
+												</label>
+											</div>
+											<div class="item">
+												<input type="radio" name="payment-method" id="pm-visa">
+												<label for="pm-visa">
+													<div class="item-logo">
+														<img src="img/logos/visa-mastercard.png" alt="">
+													</div>
+													<div class="item-content">
+														<p class="item-caption">Оплата Visa и Mastercard</p>
+														<p>Все операции по оплате банковскими картами проходят в режиме затиы. 0% комиссий.</p>
+													</div>
+												</label>
+											</div>
+											<div class="item">
+												<input type="radio" name="payment-method" id="pm-yandex">
+												<label for="pm-yandex">
+													<div class="item-logo">
+														<img src="img/logos/yandex-money.png" alt="">
+													</div>
+													<div class="item-content">
+														<p class="item-caption">Яндекс деньги</p>
+														<p>Комиссия 0%</p>
+													</div>
+												</label>
+											</div>
+											<div class="item">
+												<input type="radio" name="payment-method" id="pm-banks">
+												<label for="pm-banks">
+													<div class="item-logo">
+														<img src="img/logos/banks.png" alt="">
+													</div>
+													<div class="item-content">
+														<p class="item-caption">Оплата через интернет-банк</p>
+														<p>Оплата с помощью интернет банкинга Сбербанк Онлайн, Альфа-Клик, PSB-Retail</p>
+													</div>
+												</label>
+											</div>
+											<div class="item">
+												<input type="radio" name="payment-method" id="pm-receipt">
+												<label for="pm-receipt">
+													<div class="item-logo">
+														<img src="img/logos/receipt.png" alt="">
+													</div>
+													<div class="item-content">
+														<p class="item-caption">Оплата по квитанции в банке</p>
+														<p>Оплата по квитанции в бижайшем отделении банка</p>
+													</div>
+												</label>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="payment-methods">
-									<h3 class="slf-h3 font-300 margin-bottom-large">Способы оплаты</h3>
-									<div class="payment-methods-list">
+							</div>
+							<div class="checkout-form-footer">
+								<div class="form-footer-block">
+									<div class="checkout-total">
 										<div class="item">
-											<input type="radio" name="payment-method" id="pm-cash" checked>
-											<label for="pm-cash">
-												<div class="item-logo">
-													<img src="img/logos/cash.png" alt="">
-												</div>
-												<div class="item-content">
-													<p class="item-caption">Наличными</p>
-													<p>Наличными средствами при курьерской доставке или самовывозе.</p>
-												</div>
-											</label>
+											<div class="item-icon">
+												<i class="icon-rouble"></i>
+											</div>
+											<div class="item-label">Стоимость товара:</div>
+											<div class="item-value">6 640 р.</div>
 										</div>
 										<div class="item">
-											<input type="radio" name="payment-method" id="pm-visa">
-											<label for="pm-visa">
-												<div class="item-logo">
-													<img src="img/logos/visa-mastercard.png" alt="">
-												</div>
-												<div class="item-content">
-													<p class="item-caption">Оплата Visa и Mastercard</p>
-													<p>Все операции по оплате банковскими картами проходят в режиме затиы. 0% комиссий.</p>
-												</div>
-											</label>
+											<div class="item-icon">
+												<i class="icon-delivery"></i>
+											</div>
+											<div class="item-label">Стоимость доставки:</div>
+											<div class="item-value">250 р.</div>
 										</div>
-										<div class="item">
-											<input type="radio" name="payment-method" id="pm-yandex">
-											<label for="pm-yandex">
-												<div class="item-logo">
-													<img src="img/logos/yandex-money.png" alt="">
-												</div>
-												<div class="item-content">
-													<p class="item-caption">Яндекс деньги</p>
-													<p>Комиссия 0%</p>
-												</div>
-											</label>
+										<div class="item bigger">
+											<div class="item-icon highlighted">
+												<i class="icon-wallet"></i>
+											</div>
+											<div class="item-label">Итого сумма к оплате:</div>
+											<div class="item-value">7 890 р.</div>
 										</div>
-										<div class="item">
-											<input type="radio" name="payment-method" id="pm-banks">
-											<label for="pm-banks">
-												<div class="item-logo">
-													<img src="img/logos/banks.png" alt="">
-												</div>
-												<div class="item-content">
-													<p class="item-caption">Оплата через интернет-банк</p>
-													<p>Оплата с помощью интернет банкинга Сбербанк Онлайн, Альфа-Клик, PSB-Retail</p>
-												</div>
-											</label>
-										</div>
-										<div class="item">
-											<input type="radio" name="payment-method" id="pm-receipt">
-											<label for="pm-receipt">
-												<div class="item-logo">
-													<img src="img/logos/receipt.png" alt="">
-												</div>
-												<div class="item-content">
-													<p class="item-caption">Оплата по квитанции в банке</p>
-													<p>Оплата по квитанции в бижайшем отделении банка</p>
-												</div>
-											</label>
-										</div>
+									</div>
+								</div>
+								<div class="form-footer-block">
+									<div class="checkout-accept">
+										<p>Нажимая на кнопку, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку <br class="d-none d-xxl-inline">персональных данных в соответствии с Пользовательским соглашением, <br class="d-none d-xxl-inline">а также ознакомлен с <a href="#" target="_blank">Политикой конфиденциальности</a></p>
+										<button type="submit" class="btn btn-green with-loader">Подтвердить заказ</button>
 									</div>
 								</div>
 							</div>

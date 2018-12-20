@@ -6,6 +6,7 @@
 			display: flex;
 			padding: 25px 30px 20px 25px;
 			align-items: flex-start;
+			justify-content: space-between;
 			cursor: pointer;
 			transition: all $t;
 			position: relative;
@@ -37,6 +38,41 @@
 				transition: all $t;
 				border: 1px solid #d3d3d3;
 			}
+
+			.item-logo{
+				flex: none;
+				width: 130px;
+				margin-right: 25px;
+
+				img{
+					max-width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+
+			.item-content{
+				flex: auto;
+
+				.item-caption{
+					font-size: 18px;
+					line-height: 20px;
+					font-weight: 400;
+					color: #000;
+					margin-bottom: 10px;
+					margin-top: -3px;
+				}
+
+				p{
+					color: #4d4d4d;
+					line-height: 22px;
+				}
+			}
+
+			.item-price{
+				font-size: 18px;
+				color: #000;
+			}
 		}
 
 		&:checked{
@@ -54,11 +90,36 @@
 }
 
 .pickup-points-list{
-	> .item{
-		margin-bottom: 10px;
+	max-height: 330px;
 
-		&:last-child{
-			margin-bottom: 0;
+	.pickup-points-list-inner{
+		> .item{
+			margin-bottom: 10px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
 		}
+	}
+
+	.mCSB_scrollTools{
+		width: 9px;
+		opacity: 1;
+
+		.mCSB_dragger_bar{
+			width: 9px;
+			border-radius: 0;
+		}
+
+		.mCSB_draggerRail{
+			background: #e3e3e3;
+			width: 9px;
+			border-radius: 0;
+		}
+	}
+
+	.mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical,
+	.mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical{
+		margin: 0;
 	}
 }
