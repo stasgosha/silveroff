@@ -58,6 +58,7 @@
 @import "components/shopping-cart/checkout";
 @import "components/shopping-cart/delivery-services";
 @import "components/shopping-cart/payment-methods";
+@import "components/shopping-cart/checkout-finish";
 
 // Catalog
 @import "components/catalog/product-card";
@@ -71,6 +72,10 @@
 @import "components/catalog/catalog-footer";
 @import "components/catalog/catalog-filter";
 @import "components/catalog/filters-list";
+
+// Pickup
+@import "components/pickup/pickup-nav";
+
 
 // Cabinet
 @import "components/cabinet/user-cabinet-component";
