@@ -52,10 +52,11 @@ $(document).ready(function(){
 
 	// Accordions
 	$('[data-type="accordion-header"]').click(function(){
-		$(this).siblings('[data-type="accordion-content"]').slideToggle(300, function() {
+		$(this).siblings('[data-type="accordion-content"]').stop().slideToggle(300, function() {
 			if ($(this).is(':visible'))
 				$(this).css('display', 'flex');
 		});
+
 		$(this).closest('[data-type="accordion"]').toggleClass('opened');
 	});
 

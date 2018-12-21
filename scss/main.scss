@@ -71,7 +71,9 @@
 
 // Pickup
 @import "components/pickup/pickup-nav";
-
+@import "components/pickup/pickup-tabs";
+@import "components/pickup/pickup-on-map-component";
+@import "components/pickup/pickup-point-info-block";
 
 // Cabinet
 @import "components/cabinet/user-cabinet-component";
