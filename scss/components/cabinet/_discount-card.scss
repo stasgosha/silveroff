@@ -1,0 +1,82 @@
+.discount-card{
+	.card-image{
+		width: 100%;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.card-score{
+		padding: 13px 20px 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: #fff;
+		color: #000;
+
+
+		.item-caption{
+			font-size: 13px;
+			font-weight: 400;
+			margin-bottom: 13px;
+		}
+
+		.number{
+			margin-bottom: 10px;
+			display: flex;
+			justify-content: center;
+
+			span{
+				z-index: 1;
+				position: relative;
+				margin-right: 8px;
+				width: 24px;
+				text-align: center;
+				font-size: 38px;
+				line-height: 38px;
+				font-weight: 900;
+
+				&:last-child{
+					margin-right: 0;
+				}
+
+				&:after{
+					content: "";
+					width: 100%;
+					height: 10px;
+					background-color: #cdcdcd;
+					position: absolute;
+					z-index: -1;
+					bottom: 1px;
+					left: 0;
+				}
+			}
+		}
+
+		.info-link{
+			font-weight: 400;
+			display: flex;
+			align-items: center;
+			color: #000;
+
+			span{
+				position: relative;
+				text-decoration: underline;
+
+				&:hover{
+					text-decoration: none;
+				}
+			}
+
+			i{
+				margin-left: 5px;
+				font-size: 12px;
+				flex: none;
+			}
+		}
+
+	}
+}

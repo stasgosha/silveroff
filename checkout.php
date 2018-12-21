@@ -236,7 +236,7 @@
 											</div>
 											<div class="column">
 												<div class="form-field">
-													<input id="user-phone" type="phone" required class="input-field">
+													<input id="user-phone" type="tel" required class="input-field">
 													<label for="user-phone">Телефон*</label>
 												</div>
 											</div>
