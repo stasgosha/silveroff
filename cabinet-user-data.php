@@ -36,14 +36,14 @@
 									<img src="img/content-page/logo_card.jpg" alt="">
 								</div>
 								<div class="card-score">
-									<h4>Накопленные баллы:</h4>
+									<p>Накопленные баллы:</p>
 									<p class="number"> 
 										<span>0</span>
 										<span>2</span>
 										<span>5</span>
 										<span>9</span>
 									</p>
-									<a>Как потратить?<i class="icon-info"></i></a>
+									<a class="info-link"><span>Как потратить?</span><i class="icon-info"></i></a>
 								</div>
 							</div>
 						</div>
