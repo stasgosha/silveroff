@@ -2,6 +2,8 @@
 	display: flex;
 	align-items: center;
 	list-style: none;
+	position: relative;
+	z-index: 2;
 
 	li{
 		display: flex;
