@@ -267,3 +267,16 @@ body .slf-info{
 		background: #fff;
 	}
 }
+.with-corner {
+	&::after {
+		content: "";
+		left: -10px;
+		top: 5px;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-top: 4px solid transparent;
+		border-left: 6px solid black;
+		border-bottom: 4px solid transparent;
+	}
+}

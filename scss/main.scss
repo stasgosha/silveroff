@@ -43,10 +43,6 @@
 @import "components/common/similar-categories-list";
 @import "components/common/range-input";
 @import "components/common/checkbox";
-@import "components/common/radio-tabs";
-@import "components/common/find-on-map";
-@import "components/common/map-container";
-@import "components/common/pickup-point-block";
 
 // Shopping Cart
 @import "components/shopping-cart/shopping-cart";
@@ -81,6 +77,9 @@
 
 // Cabinet
 @import "components/cabinet/user-cabinet-component";
+@import "components/cabinet/user-cabinet_menu";
+@import "components/cabinet/user-card";
+@import "components/cabinet/user-avatar";
 
 // Sliders
 @import "components/sliders/slick-slider";
