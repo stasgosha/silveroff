@@ -27,15 +27,15 @@
 						<div class="component-sidebar">
 							<ul class="cabinet-nav">
 								<li>
-									<a href="#">
+									<a href="cabinet-orders.php">
 										<span class="item-icon">
 											<i class="icon-document"></i>
 										</span>
 										<span class="item-text">Мои заказы</span>
 									</a>
 								</li>
-								<li class="current-menu-item">
-									<a href="#">
+								<li>
+									<a href="cabinet-user-data.php">
 										<span class="item-icon">
 											<i class="icon-user"></i>
 										</span>

@@ -53,6 +53,14 @@
 		font-size: 12px;
 	}
 
+	&.btn-tiny{
+		font-size: 12px;
+		line-height: 15px;
+		padding: 3px 10px;
+		text-transform: none;
+		font-weight: 300;
+	}
+
 	&.btn-light{
 		background: #e6e6e6;
 		text-transform: none;

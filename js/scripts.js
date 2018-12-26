@@ -40,6 +40,28 @@ $(document).ready(function(){
 		arrows: true
 	});
 
+	$('.product-photos-component .previews-slider').slick({
+		infinite: false,
+		vertical: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		focusOnSelect: true,
+		asNavFor: '.product-photos-component .big-image-slider'
+	});
+
+	$('.product-photos-component .big-image-slider').slick({
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: false,
+		asNavFor: '.product-photos-component .previews-slider',
+		// fade: true,
+		vertical: true
+	});
+
 	$('.banner-block .block-slider').each(function(){
 		$(this).slick({
 			infinite: true,
@@ -264,7 +286,7 @@ $(document).ready(function(){
 		var location = window.location.href;
 		var cur_url = location.split('/').pop();
 
-		$('.top-nav li, .panel-nav li, .footer-nav li').each(function () {
+		$('.top-nav li, .panel-nav li, .footer-nav li, .cabinet-nav li').each(function () {
 			var link = $(this).find('a').attr('href');
 
 			// console.log(link);

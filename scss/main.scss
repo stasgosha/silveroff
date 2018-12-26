@@ -80,9 +80,13 @@
 @import "components/cabinet/cabinet-nav";
 @import "components/cabinet/discount-card";
 @import "components/cabinet/select-avatar-block";
+@import "components/cabinet/cabinet-order-block";
 
 // Sliders
 @import "components/sliders/slick-slider";
 @import "components/sliders/goods-slider";
 @import "components/sliders/product-photos-slider";
 @import "components/sliders/brands-slider";
+
+// Product Page
+@import "components/product-page/product-photos-component";
