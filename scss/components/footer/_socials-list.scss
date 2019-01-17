@@ -25,4 +25,38 @@
 			}
 		}
 	}
+
+	&.rounded{
+		li{
+			margin-right: 18px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			a{
+				width: 36px;
+				height: 36px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				background: transparent;
+				color: #7f7f7f;
+
+				&:hover{
+					color: #665643;
+					background: $primary;
+				}
+
+				i{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	&.with-wrap{
+		flex-wrap: wrap;
+	}
 }

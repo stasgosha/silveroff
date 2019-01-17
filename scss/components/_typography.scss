@@ -56,6 +56,10 @@ time{
 body .slf-note{
 	font-size: 12px;
 	line-height: 1.667em;
+
+	&.small{
+		font-size: 10px;
+	}
 }
 
 .slf-typography h1,
