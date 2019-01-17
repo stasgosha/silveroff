@@ -23,7 +23,7 @@
 			<div class="inner-page-wrapper">
 				<section class="page-content">
 					<div class="checkout-finish-component">
-						<!-- Весь контент тут -->
+						
 					</div>
 				</section>
 			</div>

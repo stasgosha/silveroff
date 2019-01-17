@@ -43,6 +43,12 @@
 		height: 320px;
 		flex: none;
 		margin-bottom: 10px;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
 	}
 
 	.product-content{
@@ -151,6 +157,15 @@
 		&.big{
 			font-size: 35px;
 			line-height: 37px;
+		}
+	}
+
+	&.small{
+		max-width: 250px;
+		padding: 13px;
+
+		.product-photos{
+			height: 260px;
 		}
 	}
 }

@@ -43,6 +43,11 @@
 @import "components/common/similar-categories-list";
 @import "components/common/range-input";
 @import "components/common/checkbox";
+@import "components/common/radio-tabs";
+@import "components/common/find-on-map";
+@import "components/common/map-container";
+@import "components/common/pickup-point-block";
+@import "components/common/tabs-nav";
 
 // Shopping Cart
 @import "components/shopping-cart/shopping-cart";
@@ -89,4 +94,6 @@
 @import "components/sliders/brands-slider";
 
 // Product Page
+@import "components/product-page/product-page";
 @import "components/product-page/product-photos-component";
+@import "components/product-page/product-about-component.scss";

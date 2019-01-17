@@ -22,4 +22,36 @@
 			}
 		}
 	}
+
+	&.big{
+		input{
+			+ label{
+				padding: 5px;
+				border: 1px solid #dadada;
+				height: auto;
+				font-size: 14px;
+				line-height: 18px;
+				color: #333333;
+				min-width: 40px;
+				text-align: center;
+			}
+
+			&:checked{
+				+ label{
+					color: #b9b9b9;
+					background: #2d2d2d;
+					border-color: #2d2d2d;
+				}
+			}
+		}
+	}
+
+	&.wide{
+		input{
+			+ label{
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+	}
 }

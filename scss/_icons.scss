@@ -21,6 +21,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-wallet:before {
+	content: "\e90a";
+}
 .icon-back:before {
 	content: "\e90b";
 }
@@ -171,7 +174,10 @@
 .icon-arrow-up:before {
 	content: "\e953";
 }
-.icon-drag:before {
+.icon-plus-light:before {
+	content: "\e955";
+}
+.icon-equal:before {
 	content: "\e956";
 }
 .icon-signed:before {
