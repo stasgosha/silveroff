@@ -3,44 +3,145 @@
 	align-items: center;
 	list-style: none;
 
-	li{
+	> li{
 		margin-right: 50px;
+		position: relative;
 
 		&:last-child{
 			margin-right: 0;
 		}
 
-		a{
+		> a{
 			display: block;
 			text-transform: uppercase;
 			font-size: 13px;
 			line-height: 1.85;
+			padding: 8px 0;
 			color: #000;
 			text-decoration: none;
 			font-weight: 400;
+			position: relative;
+
+			&:after{
+				content: '';
+				display: block;
+				width: calc(100% + 50px);
+				height: 3px;
+				position: absolute;
+				left: -25px;
+				bottom: 0;
+				background: #bcbcbc;
+				opacity: 0;
+				transition: all $t;
+			}
+
+			&:before{
+				content: '';
+				display: block;
+				width: calc(100% + 50px);
+				height: 100%;
+				left: -25px;
+				top: 0;
+				position: absolute;
+				display: none;
+			}
 
 			&:hover{
-				color: $primary;
+				// color: $primary;
+
+				&:after{
+					opacity: 1;
+				}
+
+				&:before{
+					display: block;
+				}
 			}
 		}
 
 		&.current-menu-item,
-		&.current-menu-parent{
-			a{
-				color: $primary;
+		&.current-menu-parent,
+		&.active{
+			> a{
+				// color: $primary;
+
+				&:after{
+					opacity: 1;
+				}
 			}
 		}
 
 		&.current-menu-item{
-			a{
+			> a{
 				cursor: default;
+
+				&:after{
+					opacity: 1;
+				}
 			}
 		}
 	}
 
 	@media screen and (max-width: 1399px){
-		li{
+		> li{
 			margin-right: 30px;
+
+			> a{
+				&:after,
+				&:before{
+					width: calc(100% + 30px);
+					left: -15px;
+				}
+			}
+		}
+
+		.top-nav-dropdown{
+			width: calc(100% + 30px);
+			left: -15px;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		> li{
+			margin-right: 14px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			> a{
+				font-size: 12px;
+
+				&:after,
+				&:before{
+					width: calc(100% + 14px);
+					left: -7px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+
+.top-nav-dropdown{
+	border: 1px solid #bcbcbc;
+	position: absolute;
+	left: -25px;
+	top: 100%;
+	width: calc(100% + 50px);
+	background: #fff;
+	z-index: 3;
+	display: none;
+
+	&#catalog-dropdown{
+		width: calc(1370px + 50px);
+
+		@media screen and (max-width: 1399px){
+			width: calc(1170px + 30px);
 		}
 	}
 }

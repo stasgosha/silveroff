@@ -84,6 +84,22 @@ $(document).ready(function(){
 
 	$('.open-on-load [data-type="accordion-header"]').trigger('click');
 
+	// Catalog Dropdown
+	$('[data-dropdown]').hover(function(){
+		var target = $( $(this).data('dropdown') );
+
+		$(this).addClass('active');
+
+		target.stop().fadeIn(300);
+	}, function(){
+		var target = $( $(this).data('dropdown') );
+
+		// setTimeout(function(){
+			target.stop().fadeOut(300);
+			$(this).removeClass('active');
+		// }, 500);
+	});
+
 	// Select Field
 	jcf.setOptions('Select', {
 		wrapNative: false,
@@ -259,6 +275,16 @@ $(document).ready(function(){
 	});
 
 	$("[data-tab].current").click();
+
+	// On Hover
+	$("[data-hover-tab]").hover(function(e){
+		// e.preventDefault();
+		var dest = $( $(this).data('hover-tab') );
+		dest.stop().fadeIn(0).siblings().hide(0);
+		$(this).addClass('current').siblings().removeClass('current');
+	}, function(){});
+
+	$( $("[data-hover-tab].current").data('hover-tab') ).stop().fadeIn(0).siblings().hide(0);
 
 	// Input fields, Textareas
 	$('.input-field, .textarea').on('keyup', function(){

@@ -31,7 +31,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="footer-block">
+						<div class="footer-block footer-contacts-wrapper">
 							<h4 class="footer-caption">Контакты</h4>
 							<ul class="contacts-list">
 								<li>
@@ -79,7 +79,7 @@
 				<div class="container">
 					<div class="footer-bottom-inner">
 						<div class="footer-block">
-							<p class="copyright">© SILVEROFF 2016   Ювелирные изделия с мужским характером</p>
+							<p class="copyright">© SILVEROFF 2016   <br>Ювелирные изделия с мужским характером</p>
 						</div>
 						<div class="footer-block">
 							<ul class="socials-list">

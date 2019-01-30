@@ -32,6 +32,24 @@
 		font-weight: 300;
 	}
 
+	@media screen and (max-width: 991px){
+		.cpb-phone{
+			a{
+				font-size: 20px;
+				line-height: 22px;
+			}
+		}
+
+		i{
+			margin-left: 5px;
+		}
+
+		p{
+			font-size: 10px;
+			line-height: 1.2;
+		}
+	}
+
 	&.white{
 		color: #fff;
 

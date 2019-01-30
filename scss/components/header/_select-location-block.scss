@@ -26,6 +26,21 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 991px){
+		.block-icon{
+			margin-right: 8px;
+
+			i{
+				font-size: 14px;
+			}
+		}
+
+		.block-content{
+			font-size: 12px;
+			line-height: 21px;
+		}
+	}
 }
 
 .city-select{

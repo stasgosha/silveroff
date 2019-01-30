@@ -4,6 +4,16 @@
 
 	.user-nav{
 		margin-right: 45px;
+
+		@media screen and (max-width: 1199px){
+			margin-right: 25px;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 15px;
 	}
 }
 
@@ -12,7 +22,7 @@
 	align-items: center;
 	list-style: none;
 
-	li{
+	> li{
 		margin-right: 25px;
 
 		&:last-child{
@@ -30,6 +40,20 @@
 
 			&:hover{
 				color: #000;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		> li{
+			margin-right: 14px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			a{
+				font-size: 12px;
 			}
 		}
 	}

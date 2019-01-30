@@ -2,8 +2,7 @@
 <?php include('header.php'); ?>
 	<div class="page-content">
 		<section class="main-slider-section">
-			<div class="main-slider">
-				<!-- TODO: заменить фон на плавающие картинки -->
+			<div class="main-slider inside-dots">
 				<div class="slide" style="background-image: url(img/main-slider/slide-1-image.png);">
 					<div class="container">
 						<div class="slide-content">
@@ -31,9 +30,11 @@
 		<section class="filter-section">
 			<div class="container">
 				<form action="#" class="main-filter"><!-- .mf- -->
-					<div class="mf-caption slf-note">Я ищу</div>
 					<div class="mf-fields">
-						<div class="mf-fields-item">
+						<div class="mf-fields-item caption-item">
+							<div class="mf-caption slf-note">Я ищу</div>
+						</div>
+						<div class="mf-fields-item for-who">
 							<div class="inline-list">
 								<div class="inline-list-item">
 									<div class="inline-radio white">
@@ -49,7 +50,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="mf-fields-item">
+						<div class="mf-fields-item filters">
 							<div class="inline-list">
 								<div class="inline-list-item">
 									<div class="select-field white">
@@ -76,8 +77,6 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="mf-fields-item">
 							<button type="submit" class="btn btn-gray btn-smaller">Подобрать</button>
 						</div>
 					</div>
@@ -92,7 +91,9 @@
 						<div class="banner-block">
 							<img src="img/banners/thick-chain.png" alt="">
 							<div class="block-content">
-								<h3 class="block-caption">Мужские Толстые цепочки из серебра</h3>
+								<h3 class="block-caption">
+								<a href="#">Мужские Толстые цепочки из серебра</a>
+							</h3>
 								<p>(Самый большой выбор в России)</p>
 								<a href="#">Смотреть</a>
 							</div>
@@ -102,7 +103,9 @@
 						<div class="banner-block">
 							<img src="img/banners/jewelry-laces.png" alt="">
 							<div class="block-content">
-								<h3 class="block-caption">Ювелирные <br>шнурки</h3>
+								<h3 class="block-caption">
+									<a href="#">Ювелирные <br>шнурки</a>
+								</h3>
 								<p>(и для женщин и для мужчин)</p>
 								<a href="#">Смотреть</a>
 							</div>
@@ -112,7 +115,9 @@
 						<div class="banner-block big">
 							<img src="img/banners/silver-jewelry.png" alt="">
 							<div class="block-content">
-								<h3 class="block-caption">Серебряные украшения производства <span class="italy-underline">Италия</span></h3>
+								<h3 class="block-caption">
+									<a href="#">Серебряные украшения производства <span class="italy-underline">Италия</span></a>
+								</h3>
 								<p>(и для женщин и для мужчин)</p>
 								<a href="#">Смотреть</a>
 							</div>
@@ -122,7 +127,9 @@
 						<div class="banner-block large">
 							<img src="img/banners/silver-bracelets.png" alt="">
 							<div class="block-content">
-								<h3 class="block-caption">Мужские браслеты <br>из серебра</h3>
+								<h3 class="block-caption">
+									<a href="#">Мужские браслеты <br>из серебра</a>
+								</h3>
 								<p>(Самый большой выбор в России)</p>
 								<a href="#">Смотреть</a>
 							</div>
@@ -132,7 +139,9 @@
 						<div class="banner-block large">
 							<img src="img/banners/silver-charms.png" alt="">
 							<div class="block-content">
-								<h3 class="block-caption">Подарочные серебряные брелоки</h3>
+								<h3 class="block-caption">
+								<a href="#">Подарочные серебряные брелоки</a>
+							</h3>
 								<a href="#">Смотреть</a>
 							</div>
 						</div>
@@ -157,7 +166,9 @@
 								</div>
 							</div>
 							<div class="block-content">
-								<h3 class="block-caption">Серебряные <br>Женские Цепочки</h3>
+								<h3 class="block-caption">
+									<a href="#">Серебряные <br>Женские Цепочки</a>
+								</h3>
 								<a href="#">Смотреть</a>
 							</div>
 						</div>
@@ -166,7 +177,9 @@
 						<div class="banner-block">
 							<img src="img/banners/silver-cufflinks.png" alt="">
 							<div class="block-content">
-								<h3 class="block-caption">Серебряные <br>запонки</h3>
+								<h3 class="block-caption">
+									<a href="#">Серебряные <br>запонки</a>
+								</h3>
 								<a href="#">Смотреть</a>
 							</div>
 						</div>
@@ -175,7 +188,9 @@
 						<div class="banner-block">
 							<img src="img/banners/mens-rings.png" alt="">
 							<div class="block-content">
-								<h3 class="block-caption">Мужские <br>Кольца из серебра</h3>
+								<h3 class="block-caption">
+									<a href="#">Мужские <br>Кольца из серебра</a>
+								</h3>
 								<a href="#">Смотреть</a>
 							</div>
 						</div>

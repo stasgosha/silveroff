@@ -1,0 +1,109 @@
+.header-catalog-component{
+	display: flex;
+	padding: 20px 0 30px;
+
+	.component-tabs-nav{
+		padding: 0 25px;
+		border-right: 1px solid #bcbcbc;
+
+		@media screen and (max-width: 1399px){
+			padding: 0 15px;
+		}
+
+		> .item{
+			display: flex;
+			margin-bottom: 12px;
+			text-decoration: none;
+			color: #000;
+			align-items: center;
+			transition: all $t;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			.item-icon{
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				margin-right: 15px;
+				flex: none;
+				border: 1px solid #d1d1d1;
+				transition: border-color $t;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				i{
+					font-size: 30px;
+					display: block;
+					margin-right: -1px;
+				}
+			}
+
+			.item-text{
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 400;
+			}
+
+			&:hover{
+				color: $primary;
+
+				.item-icon{
+					border-color: $primary;
+				}
+			}
+		}
+	}
+
+	.component-tabs-container{
+		padding: 0 30px;
+	}
+}
+
+.catalog-categories-list{
+	display: flex;
+	list-style: none;
+
+	> li{
+		margin-right: 45px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		.category-name{
+			font-size: 16px;
+			line-height: 24px;
+			color: #000;
+			text-transform: uppercase;
+			font-weight: 400;
+			margin-bottom: 15px;
+		}
+	}
+
+	.subcategories{
+		list-style: none;
+
+		> li{
+			a{
+				color: #000;
+				font-size: 14px;
+				line-height: 30px;
+				transition: none;
+				display: inline-block;
+
+				&:hover{
+					font-weight: 400;
+				}
+			}
+
+			&.current-menu-item{
+				a{
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

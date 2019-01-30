@@ -9,11 +9,25 @@
 
 	.footer-bottom{
 		margin-top: 125px;
+
+		@media screen and (max-width: 1199px){
+			margin-top: 40px;
+		}
 	}
 
 	.footer-top-inner{
 		display: flex;
 		justify-content: space-between;
+
+		@media screen and (max-width: 1199px){
+			flex-wrap: wrap;
+
+			.footer-contacts-wrapper{
+				order: 50;
+				width: 100%;
+				margin-top: 55px;
+			}
+		}
 	}
 
 	.footer-bottom-inner{
@@ -25,6 +39,16 @@
 	.copyright{
 		font-size: 14px;
 		line-height: 1.5;
+
+		@media screen and (max-width: 991px){
+			font-size: 12px;
+		}
+
+		@media screen and (min-width: 992px){
+			br{
+				display: none;
+			}
+		}
 	}
 
 	.footer-caption{
